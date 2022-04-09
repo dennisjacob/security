@@ -19,7 +19,7 @@ x509_extensions = v3_req
 countryName = SG
 localityName = Singapore
 organizationName = bethel
-commonName = *.bethel.local
+commonName = portal.bethel.local
 emailAddress = djacob.itsg@gmail.com
 
 [ v3_req ]
@@ -30,8 +30,11 @@ extendedKeyUsage = clientAuth, serverAuth
 subjectAltName = @alt_names
 
 [ alt_names ]
-DNS.1 = api.bethel.local
-DNS.2 = secured.bethel.local
+DNS.1 = portal.bethel.local
+DNS.2 = api.bethel.local
+DNS.3 = secured.bethel.local
+DNS.4 = *.test.bethel.local
+
 
 EOF
 
